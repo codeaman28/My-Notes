@@ -1,7 +1,7 @@
 <script lang="ts">
 
 	let { children } = $props();
-	import "../App.css";
+	import "../app.css";
 </script>
 
 

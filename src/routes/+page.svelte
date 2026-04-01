@@ -12,7 +12,6 @@
   let isFormExpanded = $state(false);
 
   // _pendingLoaded guards against the $effect flushing localStorage
-  // with [] before onMount has had a chance to restore saved pending notes.
   let _pendingLoaded = $state(false);
   $effect(() => {
     if (!_pendingLoaded) return;
@@ -369,7 +368,7 @@
       <p class="text-sm text-gray-500 dark:text-gray-400">
         Built by Aman •
         <a
-          href="https://github.com/YOUR_USERNAME/YOUR_REPO"
+          href="https://github.com/codeaman28/My-Notes"
           target="_blank"
           class="text-[#de5949] dark:text-[#ff7262] font-semibold hover:underline"
         >

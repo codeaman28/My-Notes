@@ -7,8 +7,8 @@
   const { note, searchQuery = "" } = $props<{ note: Note; searchQuery?: string }>();
 
   let isOpen = $state(false);
-  let title = $state(note.title);
-  let content = $state(note.content);
+  let title = $state("");
+  let content = $state("");
   let loading = $state(false);
   let deleteOpen = $state(false);
 
